@@ -1,0 +1,136 @@
+* { box-sizing: border-box;}
+
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+background: #eef2f7;
+margin: 0;
+padding: 24px;
+}
+
+.kart{
+max-width: 640px;
+margin: 0 auto;
+background: #fff;
+padding: 24px;
+border-radius: 12px;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1{ 
+margin-top: 0;
+text-align: center;
+}
+.form{
+display: flex;
+gap: 8px;
+}
+
+input{
+flex: 1;
+min-width: 0;
+padding: 10px ;
+border: 1px solid #ccd3dd;
+border-radius: 8px;
+font-size: 15px;
+}
+
+button{
+padding: 10px 18px;
+background:	#650685;
+color: #fff;
+border: none;
+border-radius: 8px;
+font-size: 15px;
+cursor: pointer;
+}
+
+button:hover{
+background: #D8B4F8;
+}
+
+#iptalBtn { background: #6b7280; display: none; }
+#iptalBtn:hover { background: #4b5563; }
+
+#mesaj {
+color: red;
+min-height: 20px;
+margin: 8px 0;
+}
+
+.istatistik{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 8px;
+margin: 16px 0;
+}
+
+.istatistik div {
+background: #f5f7fb;
+padding: 12px;
+border-radius: 8px;
+text-align: center;
+}
+
+.istatistik span {
+display: block;
+font-size: 22px;
+font-weight: bold;
+}
+
+.istatistik small {
+color: #6b7280;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th, td {
+padding: 10px;
+text-align: left;
+border-bottom: 1px solid #e5e7eb;
+}
+
+th{
+background: #f5f7fb;
+}
+.gecti{
+color:#16a34a;
+font-weight: bold;
+}
+.kaldi{
+color: #dc2626;
+font-weight: bold;
+}
+.duzenleniyor td {
+background: #fef3c7;
+}
+.islem button {
+padding: 6px 10px;
+font-size: 13px;
+margin-right: 4px;
+}
+.duzenle{
+background: #f59e0b;
+}
+.duzenle:hover {
+background: #d97706;
+}
+.sil {
+background: #dc2626;
+}
+.sil:hover{
+background: #b91c1c;
+}
+@media (max-width:520px) {
+.form{
+flex-direction: column;
+}
+.istatistik{
+grid-template-columns: repeat(2,1fr);
+}
+table{
+font-size: 13px;
+}
+}

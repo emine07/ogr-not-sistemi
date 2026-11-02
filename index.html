@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ögrenci Not Sistemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="kart">
+    <h1>Öğrenci Not Sistemi</h1>
+<div class="form">
+    <input type="text" id="ad" placeholder="öğrenci adı">
+    <input type="number" id="not" placeholder="Not (0-100)">
+    <button id="kaydetBtn" onclick="ogrenciEkle()">Ekle</button>
+    <button id="iptalBtn" onclick="duzenlemeyiIptalEt()">İptal</button>
+</div>
+<p id="mesaj"></p>
+<div class="istatistik">
+<div> <span id="ortalama">-</span>
+<small>Ortalama</small>
+</div>
+<div>
+<span id="enYuksek">-</span>
+<small>En Yüksek</small>
+</div>
+<div>
+<span id="enDusuk">-</span>
+<small>En Düşük</small>
+</div>
+<div>
+   <span id="gecen">-</span>
+   <small>Geçen</small>     
+</div>
+
+</div>
+<table>
+    <thead>
+        <tr>
+        <th>#</th>
+        <th>Ad</th>
+        <th>Not</th>
+        <th>Harf</th>
+        <th>Durum</th>
+        <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody id="liste"></tbody>
+</table>
+</main>                   
+<script src="script.js"></script>
+</body>
+</html>
